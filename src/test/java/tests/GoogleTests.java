@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 class GoogleTests {
 
     @Test
-    void selenideSearchTests() {
+    void selenideSearchTest() {
         // Открыть google
         open("https://google.com");
 
