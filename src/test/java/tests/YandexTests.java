@@ -1,4 +1,4 @@
-package tests.lesson1;
+package tests;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 class YandexTests {
 
     @Test
-    void selenideSearchTest() {
+    void lepraSearchTest() {
         open("https://ya.ru");
 
         $(byName("text")).setValue("лепра").pressEnter();
