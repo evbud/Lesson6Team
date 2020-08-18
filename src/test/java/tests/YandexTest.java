@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class YandexTest {
+class YandexTests {
 
     @Test
     void selenideSearchInYandex() {
@@ -14,7 +14,7 @@ public class YandexTest {
         open("https://ya.ru");
 
         // Ввести Selenide в поиск
-        $(byName("text")).setValue("Selenide").pressEnter();
+        $(("#text")).setValue("Selenide").pressEnter();
 
         // Проверить, что Selenide появился в результатах поиска
         $("html").shouldHave(text("selenide.org"));
