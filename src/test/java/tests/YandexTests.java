@@ -13,7 +13,6 @@ class YandexTests {
         open("https://ya.ru");
 
         // Ввести Selenide в поиск
-
         $("#text").setValue("Selenide").pressEnter();
 
         // Проверить, что Selenide появился в результатах поиска
